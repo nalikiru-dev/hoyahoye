@@ -560,7 +560,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="https://t.me/hoyahoye"
+                    href="https://t.me/start_hoyahoye"
                     className="text-sm text-white/70 hover:text-white transition-colors duration-200"
                   >
                     Telegram
