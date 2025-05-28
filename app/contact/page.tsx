@@ -51,11 +51,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium text-lg">Our Location</h3>
                       <p className="text-muted-foreground">
-                        Addis Ababa University
+                      Bahir Dar 
                         <br />
-                        King George VI Street
-                        <br />
-                        Addis Ababa, Ethiopia
+                        Bahir Dar, Ethiopia
                       </p>
                     </div>
                   </CardContent>
@@ -85,9 +83,8 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium text-lg">Call Us</h3>
                       <p className="text-muted-foreground">
-                        Main Office: +251 11 234 5678
-                        <br />
-                        Student Support: +251 91 234 5678
+                       At our Telegram Account @Ezra_araray
+                    
                       </p>
                     </div>
                   </CardContent>
