@@ -109,6 +109,17 @@ const config = {
             backgroundPosition: "0% 50%",
           },
         },
+        "rotate-border": {
+          "0%": {
+            "background-position": "0% 50%",
+          },
+          "50%": {
+            "background-position": "100% 50%",
+          },
+          "100%": {
+            "background-position": "0% 50%",
+          }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -117,6 +128,7 @@ const config = {
         "pulse-slow": "pulse-slow 3s ease-in-out infinite",
         blob: "blob 7s infinite",
         gradient: "gradient 3s ease infinite",
+        "rotate-border": "rotate-border 12s ease-in-out infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

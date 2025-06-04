@@ -13,12 +13,7 @@ import { Toaster } from "@/components/ui/toaster"
 export default function ContactPage() {
   async function handleSubmit(formData: FormData) {
     'use server'
-    
-    const result = await sendEmail(formData)
-    if (!result.success) {
-      return { error: 'Failed to send message. Please try again.' }
-    }
-    return { success: true }
+    await sendEmail(formData)
   }
 
   return (

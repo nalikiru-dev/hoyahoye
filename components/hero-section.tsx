@@ -1,7 +1,9 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Star } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function HeroSection() {
   return (
@@ -61,24 +63,45 @@ export default function HeroSection() {
 
         {/* Floating card - Only visible on larger screens */}
         <div className="hidden lg:block absolute right-10 top-1/2 -translate-y-1/2 w-80 h-auto">
-          <div className="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-xl">
-            <div className="absolute -top-3 -right-3 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
-              New
+          <motion.div
+            className="relative p-[2px]"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Animated border */}
+            
+            {/* Content container with glass effect */}
+            <div className="relative rounded-xl bg-white/20 backdrop-blur-xl p-6 shadow-lg">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="absolute -top-3 -right-3 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full"
+              >
+                New
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <h3 className="text-white font-bold text-lg mb-2">Interesting Story</h3>
+                <p className="text-white/90 text-sm mb-4">
+                  "Story: Dani and I studied together until Grade 10—he dropped out to shine shoes, I kept going and graduated top of my class. Years later, I applied for a job and saw Dani—now the owner. That moment taught me: education alone isn't enough; it needs to walk with Business."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-white/95 backdrop-blur-sm overflow-hidden items-center justify-center flex">
+                    <h1 className="text-primary text-lg text-center font-bold">N</h1>
+                  </div>
+                  <div>
+                    <p className="text-white font-medium text-sm">Nati B</p>
+                    <p className="text-white/60 text-xs"></p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
-            <h3 className="text-white font-bold text-lg mb-2">Interesting Story</h3>
-            <p className="text-white/80 text-sm mb-4">
-              "Dani and I studied together until Grade 10—he dropped out to shine shoes, I kept going and graduated top of my class. Years later, I applied for a job and saw Dani—now the owner. That moment taught me: education alone isn't enough; it needs to walk with Business."
-            </p>
-            <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-full bg-white overflow-hidden items-center justify-center flex">
-                <h1 className="text-primary text-lg text-center font-bold">N</h1>
-              </div>
-              <div>
-                <p className="text-white font-medium text-sm">Nati B</p>
-                <p className="text-white/60 text-xs"></p>
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
