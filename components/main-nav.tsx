@@ -53,8 +53,7 @@ export default function MainNav() {
               {/* Logo - Left */}
               <Link href="/" className="flex items-center gap-3 group">
                 <div className="relative h-10 w-10 bg-white flex align-center justify-center items-center overflow-hidden rounded-full border-2 border-primary/20 group-hover:border-primary/40 transition-colors">
-               <h1 className="text-primary text-md text-center font-bold">HO</h1>
-              
+                  <h1 className="text-primary text-md text-center font-bold">HO</h1>
                 </div>
                 <span className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
                   HoyaHoye
@@ -105,7 +104,9 @@ export default function MainNav() {
                     <div className="flex flex-col h-full">
                       <div className="flex items-center justify-between mb-8">
                         <Link href="/" className="flex items-center gap-2">
-                          <Image src="/logo.png" alt="HoyaHoye Logo" width={40} height={40} className="h-10 w-10" />
+                          <div className="relative h-10 w-10 bg-white flex align-center justify-center items-center overflow-hidden rounded-full border-2 border-primary/20 group-hover:border-primary/40 transition-colors">
+                            <h1 className="text-primary text-md text-center font-bold">HO</h1>
+                          </div>
                           <span className="text-xl font-bold text-gray-800 dark:text-white">HoyaHoye</span>
                         </Link>
                       </div>
