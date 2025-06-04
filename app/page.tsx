@@ -33,7 +33,6 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 relative z-10">
             <Card className="rounded-2xl border-none shadow-lg overflow-hidden card-hover">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary/50" />
               <CardHeader className="flex flex-row items-center gap-4">
                 <div className="bg-gradient-to-br from-primary/20 to-primary/40 p-3 rounded-xl">
                   <Users className="h-6 w-6 text-primary" />
@@ -75,7 +74,6 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
-          </div>
         </section>
 
         <section className="bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-900 py-12 md:py-24 relative overflow-hidden">
