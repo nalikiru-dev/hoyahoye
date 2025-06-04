@@ -73,6 +73,7 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
+            </div>
         </section>
 
         <section className="bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-900 py-12 md:py-24 relative overflow-hidden">
